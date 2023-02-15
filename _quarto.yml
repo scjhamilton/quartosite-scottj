@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Scott Hamilton, PhD"
+  description: "Personal website of Scott J Hamilton"
+  favicon: favicon.png
+  twitter-card: 
+    creator: "@schamilton"
+    site: "@schamilton"
+    card-style: "summary_large_image"
+  navbar:
+    background: dark
+    foreground: light
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd   
+      - href: blog.qmd
+      
+
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+    toc: true
+    toc-depth: 4
+    toc-title: "Contents"
+    html-math-method: katex
+    include-in-header:
+      - includes.html
+    highlight-style: tango
+
+editor: visual
+

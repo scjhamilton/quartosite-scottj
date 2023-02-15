@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Scott Hamilton",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\nAbout this site\n\n1 + 1 \n\n[1] 2\n\n\n\n\n![Elephant](elephant.png)"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "experimental-design\n\n\ndemo\n\n\n\n\nIn this demo, I’m going to walk through an example experimental design using methods from our recent paper on Balanced Design.\n\n\n\n\n\n\nMay 10, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/testblog/testblog.html",
+    "href": "posts/testblog/testblog.html",
+    "title": "Using SoftBlock to Design an Experiment",
+    "section": "",
+    "text": "Introduction\nIn particular, I’m going to imagine that I’m designing an experiment in which I assign different treatments to particular precincts in North Carolina. In order to optimize power, of course, we want to make sure that our two test groups look as similar as possible in terms of prior voting patterns.\nThus, the steps in this design will be:\n\nCollect relevant historical data.\nDefine variables on which we wish to balance.\nAllocate treatment assignment using new methods.\nSimulate the power of hypothesis tests under the proposed design.\nFake some outcome data and analyze it for average and heterogeneous treatment effects.\n\n\n\nImplementation of methods"
+  }
+]

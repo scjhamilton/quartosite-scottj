@@ -1,0 +1,11 @@
+---
+title: "Scott Hamilton"
+description: "Clinical Assistant Professor at University of North Texas"
+page-layout: full
+---
+
+![](images/profile2.jpg){fig-align="center" width="295"}
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

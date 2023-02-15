@@ -1,0 +1,40 @@
+---
+title: "Using SoftBlock to Design an Experiment"
+description: "In this demo, I'm going to walk through an example experimental design using methods from our [recent paper on Balanced Design](https://arxiv.org/abs/2010.11332)."
+abstract: >
+  This is a demo of using SoftBlock for experimental design for a notional randomization of precincts in North Carolina. To optimize power, we focus on ensuring very similar patterns of prior voting patterns in treatment and in control. This demo walks through all the necessary steps for this process and shows how to perform estimation of average and heterogeneous effects.
+date: "2022-05-10"
+categories:
+  - experimental-design
+  - demo
+code-fold: true
+image: /posts/testblog/three-designs.jpg
+---
+
+
+```{r load_packages, echo=FALSE}
+suppressPackageStartupMessages({
+library(DT)
+library(readr)
+library(dplyr)
+library(sf)
+library(quickblock)
+library(MASS)
+library(purrr)
+library(glmnet)
+library(ggplot2)})
+```
+
+# Introduction
+
+In particular, I'm going to imagine that I'm designing an experiment in which I assign different treatments to particular precincts in North Carolina. In order to optimize power, of course, we want to make sure that our two test groups look as similar as possible in terms of prior voting patterns.
+
+Thus, the steps in this design will be:
+
+1. Collect relevant historical data.
+2. Define variables on which we wish to balance.
+3. Allocate treatment assignment using new methods.
+4. Simulate the power of hypothesis tests under the proposed design.
+5. Fake some outcome data and analyze it for average and heterogeneous treatment effects.
+
+# Implementation of methods
